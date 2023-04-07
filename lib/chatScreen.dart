@@ -76,7 +76,7 @@ class _ChatScreenState extends State<ChatScreen> {
                     child: Text('A'),
                   ),
                   title: Text('Münire'),
-                  subtitle: Text('Hello!'),
+                  subtitle: Text('Selam'),
                   trailing: Text('12:00 PM'),
                 );
               },
