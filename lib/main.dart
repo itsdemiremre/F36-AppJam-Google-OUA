@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 import 'package:f36_appjam_project/homeScreen.dart';
 
 import 'auth_page.dart';
@@ -18,8 +17,6 @@ import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
 import 'start_page.dart';
 
-
-=======
 import 'package:f36_appjam_project/sinavlar.dart';
 import 'auth_page.dart';
 import 'chat_screen.dart';
@@ -29,8 +26,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
 import 'start_page.dart';
 
->>>>>>> Stashed changes
-void main()async {
+void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
@@ -44,20 +40,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'RankAdemy',
+        title: 'RankAdemy',
         debugShowCheckedModeBanner: false,
-          theme: LightTheme().theme,
-<<<<<<< Updated upstream
-=======
-
-
-
-
->>>>>>> Stashed changes
-        home: StartPage()
-    );
+        theme: LightTheme().theme,
+        home: StartPage());
   }
 }
-
-  
-
