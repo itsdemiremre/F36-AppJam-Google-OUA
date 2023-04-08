@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 import 'package:f36_appjam_project/homeScreen.dart';
 
 import 'auth_page.dart';
@@ -8,6 +9,27 @@ import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
 import 'start_page.dart';
 
+import 'package:f36_appjam_project/sinavlar.dart';
+import 'auth_page.dart';
+import 'chat_screen.dart';
+import 'package:f36_appjam_project/theme/light_theme.dart';
+import 'package:flutter/material.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
+import 'start_page.dart';
+
+
+=======
+import 'package:f36_appjam_project/sinavlar.dart';
+import 'auth_page.dart';
+import 'chat_screen.dart';
+import 'package:f36_appjam_project/theme/light_theme.dart';
+import 'package:flutter/material.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
+import 'start_page.dart';
+
+>>>>>>> Stashed changes
 void main()async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
@@ -25,7 +47,14 @@ class MyApp extends StatelessWidget {
       title: 'RankAdemy',
         debugShowCheckedModeBanner: false,
           theme: LightTheme().theme,
-        home: homeScreen()
+<<<<<<< Updated upstream
+=======
+
+
+
+
+>>>>>>> Stashed changes
+        home: StartPage()
     );
   }
 }
