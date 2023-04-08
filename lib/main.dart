@@ -1,8 +1,14 @@
-import 'package:f36_appjam_project/chat_screen.dart';
 import 'package:f36_appjam_project/theme/light_theme.dart';
 import 'package:flutter/material.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
+import 'start_page.dart';
 
-void main() {
+void main()async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   runApp(const MyApp());
 }
 
@@ -15,7 +21,7 @@ class MyApp extends StatelessWidget {
       title: 'RankAdemy',
         debugShowCheckedModeBanner: false,
           theme: LightTheme().theme,
-         home: ChatScreen()
+
     );
   }
 }
