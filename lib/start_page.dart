@@ -82,15 +82,26 @@ void _goToAuthPage(BuildContext context) {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Image.asset('lib/images/start1.jpg'),
-                        Text('Sayfa 3'),
+                        Text('Sayfa 2'),
                         spaceLarge(),
                         ElevatedButton(
                           onPressed: () => _goToAuthPage(context),
-                          style: ElevatedButton.styleFrom(
-                            backgroundColor: colorsBlue(),
-                            elevation: 20
+                          child: Text(
+                            'Başlayalım',
+                            style: TextStyle(
+                              fontSize: 18.0,
+                              fontWeight: FontWeight.bold,
+                              letterSpacing: 1.0,
+                            ),
                           ),
-                          child: Text('Başlayalım'),
+                          style: ElevatedButton.styleFrom(
+                            backgroundColor: colorsBlue(), // Butonun arka plan rengi
+                            padding: EdgeInsets.symmetric(horizontal: 60.0, vertical: 18.0), // Butonun iç boşluğu
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(20.0), // Butonun kenar yuvarlatma değeri
+                            ),
+                            elevation: 5.0, // Butonun yükselik değeri
+                          ),
                         ),
                       ],
                     ),
