@@ -1,5 +1,5 @@
+import 'package:f36_appjam_project/chat_screen.dart';
 import 'package:f36_appjam_project/theme/light_theme.dart';
-import 'package:f36_appjam_project/chatScreen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -12,12 +12,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'RankAdemy',
         debugShowCheckedModeBanner: false,
           theme: LightTheme().theme,
-
-
-         home: ChatScreen(),
+         home: ChatScreen()
     );
   }
 }
