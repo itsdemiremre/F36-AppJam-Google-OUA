@@ -1,3 +1,5 @@
+import 'package:f36_appjam_project/homeScreen.dart';
+
 import 'auth_page.dart';
 import 'chat_screen.dart';
 import 'package:f36_appjam_project/theme/light_theme.dart';
@@ -23,7 +25,7 @@ class MyApp extends StatelessWidget {
       title: 'RankAdemy',
         debugShowCheckedModeBanner: false,
           theme: LightTheme().theme,
-        home: StartPage()
+        home: homeScreen()
     );
   }
 }
