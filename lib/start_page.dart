@@ -44,7 +44,7 @@ void _goToAuthPage(BuildContext context) {
                         const Padding(
                           padding: EdgeInsets.symmetric(horizontal: 50),
                           child: Center(
-                            child: Text('Akademi bursiyerlerine özel hazırladığımız sorularla eksiklerinizi görebilir ve geşiminize katkıda bulanabilirsiniz!',
+                            child: Text('Akademi bursiyerlerine özel hazırladığımız sorularla eksiklerinizi görebilir ve gelişiminize katkıda bulanabilirsiniz!',
                             textAlign: TextAlign.center,
                               style: TextStyle(
                                 color: Color.fromARGB(250,74 ,74 ,74),
@@ -96,7 +96,7 @@ void _goToAuthPage(BuildContext context) {
                         const Padding(
                           padding: EdgeInsets.symmetric(horizontal: 50),
                           child: Center(
-                            child: Text('Rakiplerinizle yarışıp yazılım becerililerinizi geliştirebilir ve aynı zamanda onlarla tanışıp güzel dosluklar edinebilirsiniz!',
+                            child: Text('Rakiplerinizle yarışıp yazılım becerililerinizi geliştirebilir ve aynı zamanda onlarla tanışıp güzel dostluklar edinebilirsiniz!',
                             textAlign: TextAlign.center,
                               style: TextStyle(
                                 color:Color.fromARGB(250,74 ,74 ,74),

@@ -39,7 +39,7 @@ class _DerslerAnaEkranState extends State<DerslerAnaEkran> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: const [
               Text(
-                "SINAV TAKİP SAYFASI",
+                "Sınavlar",
                 style: TextStyle(color: Colors.black, fontSize: 20.0),
               ),
             ],

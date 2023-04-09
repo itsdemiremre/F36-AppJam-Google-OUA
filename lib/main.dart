@@ -7,6 +7,7 @@ import 'package:f36_appjam_project/theme/light_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
+import 'login_page.dart';
 import 'start_page.dart';
 
 import 'package:f36_appjam_project/sinavlar.dart';

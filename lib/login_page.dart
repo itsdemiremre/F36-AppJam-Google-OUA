@@ -100,7 +100,7 @@ class _LoginPageState extends State<LoginPage> {
               spaceMedium(),
               const Text('Hoşgeldiniz!',
               style: TextStyle(
-                color: Color.fromARGB(255, 242, 249, 15),
+                color: Colors.orange,
                 fontWeight: FontWeight.bold,
                 fontSize: 30,
               ),
