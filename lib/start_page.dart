@@ -1,6 +1,6 @@
 import 'package:f36_appjam_project/auth_page.dart';
 import 'package:flutter/material.dart';
-
+import 'package:flutter_svg/flutter_svg.dart';
 import 'components/color_and_space.dart';
 import 'components/my_button.dart';
 
@@ -28,23 +28,30 @@ void _goToAuthPage(BuildContext context) {
         children: [
           Expanded(
             child: Container(
-              color: Colors.blue,
+              color: colorsWhite(),
               child: PageView(
                 controller: controller,
                 children: [
                   Container(
-                    color: colorsWhite(),
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Image.asset('lib/images/start1.jpg'),
+                        SvgPicture.asset('lib/images/Software.svg',
+                        width: 300,
+                        height: 300,
+                        ),
+                        spaceMedium(),
                         const Padding(
                           padding: EdgeInsets.symmetric(horizontal: 50),
                           child: Center(
-                            child: Text('Akademi bursiyerleri ile yarış ve seviyeni herkese göster!',
+                            child: Text('Akademi bursiyerlerine özel hazırladığımız sorularla eksiklerinizi görebilir ve geşiminize katkıda bulanabilirsiniz!',
+                            textAlign: TextAlign.center,
                               style: TextStyle(
-                                fontSize: 22,
-                                fontWeight: FontWeight.bold,
+                                color: Color.fromARGB(250,74 ,74 ,74),
+                                wordSpacing: 4.0,
+                                height: 1.5 ,
+                                fontSize: 26,
+                                fontWeight: FontWeight.normal,
                               ),
                               ),
                           ),
@@ -59,13 +66,14 @@ void _goToAuthPage(BuildContext context) {
                           child: Text(
                             'İleri',
                             style: TextStyle(
-                              fontSize: 18.0,
+                              color: Color.fromARGB(250,74 ,74 ,74),
+                              fontSize: 20.0,
                               fontWeight: FontWeight.bold,
                               letterSpacing: 1.0,
                             ),
                           ),
                           style: ElevatedButton.styleFrom(
-                            backgroundColor: Color.fromARGB(255, 196, 248, 39), // Butonun arka plan rengi
+                            backgroundColor: Color.fromARGB(255, 242, 249, 15),
                             padding: EdgeInsets.symmetric(horizontal: 60.0, vertical: 18.0), // Butonun iç boşluğu
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(20.0), // Butonun kenar yuvarlatma değeri
@@ -77,25 +85,43 @@ void _goToAuthPage(BuildContext context) {
                     ),
                   ),
                   Container(
-                    color: colorsWhite(),
-                    child: Column(
+                  child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        Image.asset('lib/images/start1.jpg'),
-                        Text('Sayfa 2'),
+                        SvgPicture.asset('lib/images/people.svg',
+                        width: 300,
+                        height: 300,
+                        ),
+                        spaceMedium(),
+                        const Padding(
+                          padding: EdgeInsets.symmetric(horizontal: 50),
+                          child: Center(
+                            child: Text('Rakiplerinizle yarışıp yazılım becerililerinizi geliştirebilir ve aynı zamanda onlarla tanışıp güzel dosluklar edinebilirsiniz!',
+                            textAlign: TextAlign.center,
+                              style: TextStyle(
+                                color:Color.fromARGB(250,74 ,74 ,74),
+                                wordSpacing: 4.0,
+                                height: 1.5 ,
+                                fontSize: 26,
+                                fontWeight: FontWeight.normal,
+                              ),
+                            ),
+                          ),
+                        ),
                         spaceLarge(),
                         ElevatedButton(
                           onPressed: () => _goToAuthPage(context),
                           child: Text(
                             'Başlayalım',
                             style: TextStyle(
-                              fontSize: 18.0,
+                              color: Color.fromARGB(250,74 ,74 ,74),
+                              fontSize: 20.0,
                               fontWeight: FontWeight.bold,
                               letterSpacing: 1.0,
                             ),
                           ),
                           style: ElevatedButton.styleFrom(
-                            backgroundColor: colorsBlue(), // Butonun arka plan rengi
+                            backgroundColor: Color.fromARGB(255, 242, 249, 15), // Butonun arka plan rengi
                             padding: EdgeInsets.symmetric(horizontal: 60.0, vertical: 18.0), // Butonun iç boşluğu
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(20.0), // Butonun kenar yuvarlatma değeri

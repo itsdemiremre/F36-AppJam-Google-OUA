@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
       title: 'RankAdemy',
         debugShowCheckedModeBanner: false,
           theme: LightTheme().theme,
-
+      home: StartPage(),
     );
   }
 }

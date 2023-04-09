@@ -14,7 +14,7 @@ final Function()? onTab;
       onTap: onTab,
       child: Container(
         padding: const EdgeInsets.all(15),
-        margin: const EdgeInsets.symmetric(horizontal: 50.0),
+        margin: const EdgeInsets.symmetric(horizontal: 25.0),
         decoration: BoxDecoration(
           color: Color.fromARGB(250, 66, 131, 241),
           borderRadius: BorderRadius.circular(15)

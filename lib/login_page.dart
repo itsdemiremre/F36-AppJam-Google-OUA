@@ -93,48 +93,24 @@ class _LoginPageState extends State<LoginPage> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 25.0),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    Container(
-                      width: 200,
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          const Text(
-                            'Hoşgeldiniz!',
-                            style: TextStyle(
-                              fontSize: 30,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                          spaceMedium(),
-                          const Text(
-                            'Hemen giriş yap, rakiplerini geride bırak!',
-                            style: TextStyle(
-                              fontSize: 20,
-                              fontWeight: FontWeight.normal,
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                    spaceSmallWidth(),
-                    Image.asset('lib/images/laptop.png',
-                    height: 300,
-                    width: 150,
-                    ),
-                  ],
-                ),
+              Icon(Icons.lock_person_rounded,
+               size: 150,
+               color: colorsBlue(),
+              ),
+              spaceMedium(),
+              const Text('Hoşgeldiniz!',
+              style: TextStyle(
+                color: Color.fromARGB(255, 242, 249, 15),
+                fontWeight: FontWeight.bold,
+                fontSize: 30,
+              ),
               ),
               spaceMedium(),
               MyTextField(
                 controller: emailController,
                 hintText: 'E-mail', obscureText: false,
               ),
-              spaceLarge(),
+              spaceMedium(),
               MyTextField(
                 controller: passwordController,
                 hintText: 'Şifre',
@@ -155,12 +131,12 @@ class _LoginPageState extends State<LoginPage> {
                   ],
                 ),
               ),
-              spaceMedium(),
+              spaceSmall(),
               MyButton(
                 text: 'Giriş',
                 onTab: signUserIn,
               ),
-              spaceMedium(),
+              spaceLarge(),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 25),
                 child: Row(
@@ -203,7 +179,7 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                 ],
               ),
-              spaceMedium()
+              spaceSmall()
             ],
           ),
         ),
