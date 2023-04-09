@@ -1,4 +1,5 @@
 import 'package:f36_appjam_project/homeScreen.dart';
+import 'package:f36_appjam_project/home_page.dart';
 
 import 'auth_page.dart';
 import 'chat_screen.dart';
@@ -46,7 +47,6 @@ class MyApp extends StatelessWidget {
           theme: LightTheme().theme,
       home: StartPage(),
     );
-        theme: LightTheme().theme,
-        home: StartPage());
+
   }
 }
