@@ -41,12 +41,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: 'RankAdemy',
-        debugShowCheckedModeBanner: false,
-
-          theme: LightTheme().theme,
+      title: 'RankAdemy',
+      debugShowCheckedModeBanner: false,
+      theme: LightTheme().theme,
       home: StartPage(),
     );
-
   }
 }
