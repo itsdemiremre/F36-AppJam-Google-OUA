@@ -63,7 +63,6 @@ class CostumDrawer extends StatelessWidget {
                   endIndent: 20,
                   indent: 20,
                 ),
-                _drawerItem(onTap: (){}, iconData: Icons.settings, title: 'Ayarlar'),
                 _drawerItem(onTap: (){signUserOut();}, iconData: Icons.logout, title: 'Çıkış'),
               ],
             ),

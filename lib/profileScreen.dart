@@ -38,20 +38,29 @@ class _profileScreenState extends State<profileScreen> {
         title: Align(
           alignment: Alignment.centerRight,
           child:
-            Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              crossAxisAlignment: CrossAxisAlignment.end,
-              children: const [
-                Text(
-                  "Murat AVCI",
-                  style: TextStyle(color: Colors.black, fontSize: 16.0),
-                ),
-                Text(
-                  "554 Puan",
-                  style: TextStyle(color: Colors.blueGrey, fontSize: 14.0),
-                )
-              ],
-            ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.end,
+            children: [
+              Image.asset("assets/rank2.png", height: 26,),
+              SizedBox(
+                width: 3,
+              ),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.end,
+                children: const [
+                  Text(
+                    "Murat AVCI",
+                    style: TextStyle(color: Colors.black, fontSize: 16.0),
+                  ),
+                  Text(
+                    "555 Puan",
+                    style: TextStyle(color: Colors.blueGrey, fontSize: 14.0),
+                  )
+                ],
+              ),
+            ],
+          ),
 
         ),
         actions: [

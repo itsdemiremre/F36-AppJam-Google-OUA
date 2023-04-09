@@ -50,9 +50,7 @@ class _homeScreenState extends State<homeScreen> {
           Row(
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
-              CircleAvatar(
-                backgroundImage:  AssetImage('lib/images/profilepicture.png'),
-              ),
+              Image.asset("assets/rank2.png", height: 26,),
               SizedBox(
                 width: 3,
               ),
@@ -65,7 +63,7 @@ class _homeScreenState extends State<homeScreen> {
                     style: TextStyle(color: Colors.black, fontSize: 16.0),
                   ),
                   Text(
-                    "554 Puan",
+                    "555 Puan",
                     style: TextStyle(color: Colors.blueGrey, fontSize: 14.0),
                   )
                 ],
