@@ -1,5 +1,6 @@
 import 'package:f36_appjam_project/sinavlar1.dart';
 import 'package:flutter/material.dart';
+import 'costum_drawer.dart';
 
 class DerslerAnaEkran extends StatefulWidget {
   const DerslerAnaEkran({super.key});
@@ -49,11 +50,18 @@ class _DerslerAnaEkranState extends State<DerslerAnaEkran> {
             ],
           ),
         ),
-        leading: IconButton(
-          onPressed: () {},
-          icon: const Icon(Icons.menu, color: Colors.black,),
+          leading: Builder(
+          builder: (BuildContext context) {
+            return IconButton(
+              onPressed: () {
+                Scaffold.of(context).openDrawer();
+              },
+              icon: const Icon(Icons.menu, color: Colors.black,),
+            );
+          },
         ),
       ),
+      drawer: CostumDrawer(),
       body: const DersButonlari(),
     );
   }

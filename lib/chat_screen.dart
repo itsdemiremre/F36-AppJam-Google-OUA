@@ -1,6 +1,7 @@
 import 'package:flutter_chat_types/flutter_chat_types.dart' as types;
 import 'package:flutter/material.dart';
 import 'package:flutter_chat_ui/flutter_chat_ui.dart';
+import 'costum_drawer.dart';
 
 class ChatScreen extends StatefulWidget {
   const ChatScreen({super.key});
@@ -24,7 +25,7 @@ class _ChatScreenState extends State<ChatScreen> {
         title: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text("Chat", style: TextStyle(color: Colors.black, fontSize: 16.0)),
+            Text("Sohbet", style: TextStyle(color: Colors.black, fontSize: 16.0)),
           ],
         ),
         actions: [
@@ -35,13 +36,18 @@ class _ChatScreenState extends State<ChatScreen> {
             ),
           ),
         ],
-        leading: IconButton(
-          onPressed: () {},
-          icon: Icon(
-            Icons.menu,
-          ),
+        leading: Builder(
+          builder: (BuildContext context) {
+            return IconButton(
+              onPressed: () {
+                Scaffold.of(context).openDrawer();
+              },
+              icon: const Icon(Icons.menu, color: Colors.black,),
+            );
+          },
         ),
       ),
+      drawer: CostumDrawer(),
       body: Chat(
           messages: _messages, onSendPressed: _handleSendPressed, user: _user),
     );

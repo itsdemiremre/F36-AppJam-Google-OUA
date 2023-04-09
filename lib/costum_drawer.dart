@@ -1,5 +1,14 @@
 import 'dart:ui';
+import 'package:f36_appjam_project/homeScreen.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'profileScreen.dart';
+import 'chat_screen.dart';
+import 'sinavlar.dart';
+
+void signUserOut(){
+    FirebaseAuth.instance.signOut();
+}
 
 class CostumDrawer extends StatelessWidget {
   const CostumDrawer({Key? key}) : super(key: key);
@@ -17,17 +26,45 @@ class CostumDrawer extends StatelessWidget {
                 const DrawerHeader(
                   child: Image(image: AssetImage("assets/rankademyLogo.png"),),
                 ),
-                _drawerItem(onTap: (){}, iconData: Icons.home, title: 'Ana Sayfa'),
-                _drawerItem(onTap: (){}, iconData: Icons.person, title: 'Profilim'),
-                _drawerItem(onTap: (){}, iconData: Icons.comment, title: 'Sohbetler'),
-                _drawerItem(onTap: (){}, iconData: Icons.question_mark, title: 'Sınavlar'),
+                _drawerItem(onTap: (){
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => homeScreen(),
+                    ),
+                  );
+                }, iconData: Icons.home, title: 'Ana Sayfa'),
+                _drawerItem(onTap: (){
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => profileScreen(),
+                    ),
+                  );
+                }, iconData: Icons.person, title: 'Profilim'),
+                _drawerItem(onTap: (){
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => ChatScreen(),
+                    ),
+                  );
+                }, iconData: Icons.comment, title: 'Sohbetler'),
+                _drawerItem(onTap: (){
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => DerslerAnaEkran(),
+                    ),
+                  );
+                }, iconData: Icons.question_mark, title: 'Sınavlar'),
                 const Divider(
                   color: Colors.black,
                   endIndent: 20,
                   indent: 20,
                 ),
                 _drawerItem(onTap: (){}, iconData: Icons.settings, title: 'Ayarlar'),
-                _drawerItem(onTap: (){}, iconData: Icons.logout, title: 'Çıkış'),
+                _drawerItem(onTap: (){signUserOut();}, iconData: Icons.logout, title: 'Çıkış'),
               ],
             ),
           ),

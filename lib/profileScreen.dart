@@ -58,7 +58,7 @@ class _profileScreenState extends State<profileScreen> {
           Padding(padding:
           const EdgeInsets.only(left: 0, right: 18.0),
             child: new CircleAvatar(
-              //backgroundImage: new NetworkImage(".png"),
+              backgroundImage:  AssetImage('lib/images/profilepicture.png'),
             ),
           )
         ],

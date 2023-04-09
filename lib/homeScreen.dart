@@ -47,18 +47,29 @@ class _homeScreenState extends State<homeScreen> {
         title: Align(
           alignment: Alignment.centerRight,
           child:
-          Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.end,
-            children: const [
-              Text(
-                "Murat AVCI",
-                style: TextStyle(color: Colors.black, fontSize: 16.0),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.end,
+            children: [
+              CircleAvatar(
+                backgroundImage:  AssetImage('lib/images/profilepicture.png'),
               ),
-              Text(
-                "554 Puan",
-                style: TextStyle(color: Colors.blueGrey, fontSize: 14.0),
-              )
+              SizedBox(
+                width: 3,
+              ),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.end,
+                children: const [
+                  Text(
+                    "Murat AVCI",
+                    style: TextStyle(color: Colors.black, fontSize: 16.0),
+                  ),
+                  Text(
+                    "554 Puan",
+                    style: TextStyle(color: Colors.blueGrey, fontSize: 14.0),
+                  )
+                ],
+              ),
             ],
           ),
 
@@ -67,7 +78,7 @@ class _homeScreenState extends State<homeScreen> {
           Padding(padding:
           const EdgeInsets.only(left: 0, right: 18.0),
             child: new CircleAvatar(
-              //backgroundImage: new NetworkImage(".png"),
+              backgroundImage:  AssetImage('lib/images/profilepicture.png'),
             ),
           )
         ],
