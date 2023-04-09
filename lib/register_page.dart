@@ -47,7 +47,7 @@ class _RegisterPageState extends State<RegisterPage> {
       context: context,
       builder: (context){
         return AlertDialog(
-          backgroundColor: Colors.purple,
+          backgroundColor: Color.fromARGB(255, 239, 225, 41),
           title: Center(
             child: Text(
               message,
@@ -77,43 +77,19 @@ class _RegisterPageState extends State<RegisterPage> {
       body: Center(
         child: SingleChildScrollView(
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.start,
             children: [
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 25.0),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    Container(
-                      width: 200,
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          const Text(
-                            'Hoşgeldiniz!',
-                            style: TextStyle(
-                              fontSize: 30,
-                              fontWeight: FontWeight.bold,
-                            ),
-                          ),
-                          spaceMedium(),
-                          const Text(
-                            'Hemen kayıt ol, yarışmaya başla!',
-                            style: TextStyle(
-                              fontSize: 20,
-                              fontWeight: FontWeight.normal,
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                    spaceSmallWidth(),
-                    Image.asset('lib/images/laptop.png',
-                    height: 300,
-                    width: 150,
-                    ),
-                  ],
-                ),
+              Icon(Icons.lock_person_rounded,
+               size: 150,
+               color: colorsBlue(),
+              ),
+              spaceMedium(),
+              const Text('Hoşgeldiniz!',
+              style: TextStyle(
+                color: Color.fromARGB(255, 242, 249, 15),
+                fontWeight: FontWeight.bold,
+                fontSize: 30,
+              ),
               ),
               spaceMedium(),
               MyTextField(

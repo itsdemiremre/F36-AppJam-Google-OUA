@@ -42,6 +42,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
         title: 'RankAdemy',
         debugShowCheckedModeBanner: false,
+
+          theme: LightTheme().theme,
+      home: StartPage(),
+    );
         theme: LightTheme().theme,
         home: StartPage());
   }
